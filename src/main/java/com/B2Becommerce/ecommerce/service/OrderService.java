@@ -1,10 +1,13 @@
 package com.B2Becommerce.ecommerce.service;
 
+import com.B2Becommerce.ecommerce.events.OrderCreatedEvent;
 import com.B2Becommerce.ecommerce.model.Order;
 import com.B2Becommerce.ecommerce.model.Product;
 import com.B2Becommerce.ecommerce.repo.OrderRepo;
 import com.B2Becommerce.ecommerce.repo.ProductRepo;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,6 +24,13 @@ public class OrderService {
     @Autowired
     private PaymentService paymentService;
 
+    @Autowired
+    private ProductService productService;
+
+
+    @Autowired
+    private ApplicationEventPublisher eventPublisher;
+
 
     public double calculateSubtotal(List<Product> productsInCart) {
         return productsInCart.stream()
@@ -36,7 +46,22 @@ public class OrderService {
                 .sum();
     }
 
-    public Order cretaeOrder(Order order){
+    @Transactional
+    public Order processOrder(Order order) throws Exception {
+        List<Product> products = order.getProducts();
+
+        // Update quantities for all products in the order
+        for (Product product : products) {
+
+            productService.updateQty(product.getId());
+        }
+
+        // Create the order
+        return createOrder(order);
+    }
+    
+
+    public Order createOrder(Order order){
         try{
             if(order!=null) {
                 List<Product> productsInCart = order.getProducts();
@@ -49,20 +74,24 @@ public class OrderService {
                     throw new Exception("Order amount mismatch cart tampered");
                 }
 
-                if(order.getPayment_method().equalsIgnoreCase("cash")){
-                    System.out.println("order successful");
-                    paymentService.ProcessCashPayment(calculatedTotal);
-
-
-                }else if(order.getPayment_method()
-                        .equalsIgnoreCase("online")){
-                            paymentService
-                                    .initiateOnlinePayment(calculatedTotal);
-                }
+//                if(order.getPayment_method().equalsIgnoreCase("cash")){
+//                    System.out.println("order successful");
+//                    paymentService.ProcessCashPayment(calculatedTotal);
+//
+//
+//                }else if(order.getPayment_method()
+//                        .equalsIgnoreCase("online")){
+//                            paymentService
+//                                    .initiateOnlinePayment(calculatedTotal);
+//                }
 
 
                 //order.setOrder_status("placed");
-                return orderRepo.save(order);
+                Order newOrder = orderRepo.save(order);
+
+                //emit order created event
+                eventPublisher.publishEvent(new OrderCreatedEvent(newOrder));
+                return newOrder;
 
             }else{
                 throw new Exception("empty order");
@@ -77,4 +106,6 @@ public class OrderService {
     public List<Order> getAll(){
         return orderRepo.findAll();
     }
+
+
 }

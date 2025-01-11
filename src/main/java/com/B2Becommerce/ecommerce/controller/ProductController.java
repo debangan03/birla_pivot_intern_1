@@ -2,6 +2,7 @@ package com.B2Becommerce.ecommerce.controller;
 
 import com.B2Becommerce.ecommerce.model.Product;
 import com.B2Becommerce.ecommerce.service.ProductService;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,7 @@ public class ProductController {
     @Autowired
     public ProductService productService;
 
+    @Transactional
     @GetMapping
     public ResponseEntity<List<Product>> getAllProducts(){
         try{
@@ -29,6 +31,7 @@ public class ProductController {
 
 
     }
+    @Transactional
     @PostMapping
     public ResponseEntity<?> addProducts(@RequestBody List<Product> products){
         try{
@@ -43,6 +46,7 @@ public class ProductController {
 
     }
 
+    @Transactional
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteProduct(@PathVariable String id) {
         try {
@@ -53,7 +57,7 @@ public class ProductController {
         }
     }
 
-
+    @Transactional
     @PutMapping("/{id}")
     public ResponseEntity<?> updateProduct(@PathVariable String id,
                                            @RequestBody Product product) {
