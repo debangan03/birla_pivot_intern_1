@@ -1,13 +1,13 @@
-package com.example.MyFirstProject;
+package com.B2Becommerce.ecommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MyFirstProjectApplication {
+public class EcommerceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MyFirstProjectApplication.class, args);
+		SpringApplication.run(EcommerceApplication.class, args);
 	}
 
 }
