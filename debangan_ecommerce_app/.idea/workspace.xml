@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fbde884-3cd5-44be-bc47-a83feb2a0600" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EventNotification/src/main/java/com/ecommerce/EventNotification/service/EventNotoficationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/birla_pivot_intern_1.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
@@ -17,90 +16,7 @@
       <change beforePath="$PROJECT_DIR$/../.run/Template Application.run.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HELP.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/birla_pivot_intern_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.run/Template Application.run.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/EcommerceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/config/JwtFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/config/PostgresqlDBConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/controller/OrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/controller/PublicController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/dto/OrderDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/eventlistners/PaymentListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/events/OrderCreatedEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/events/OrderCreatedNotification.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/model/OrderStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/model/UserPrincipal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/repo/OrderRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/repo/ProductRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/repo/UserRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/service/JwtService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/service/KafkaOrderEventPublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/service/PaymentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/service/UserDetailsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/B2Becommerce/ecommerce/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/B2Becommerce/ecommerce/EcommerceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/EcommerceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/config/JwtFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/config/PostgresqlDBConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/controller/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/controller/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/controller/PublicController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/dto/OrderDTO$OrderDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/dto/OrderDTO$ProductDTO$ProductDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/dto/OrderDTO$ProductDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/dto/OrderDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/eventlistners/PaymentListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/events/OrderCreatedEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/events/OrderCreatedNotification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/model/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/model/OrderStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/model/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/model/UserPrincipal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/repo/OrderRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/repo/ProductRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/repo/UserRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/service/JwtService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/service/KafkaOrderEventPublisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/service/PaymentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/service/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/service/UserDetailsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/B2Becommerce/ecommerce/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ecommerce-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ecommerce-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.B2Becommerce.ecommerce.EcommerceApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.B2Becommerce.ecommerce.EcommerceApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/B2Becommerce/ecommerce/EcommerceApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mvnw" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../mvnw.cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
